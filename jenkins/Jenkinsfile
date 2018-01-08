@@ -38,6 +38,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+                input message: 'lets allow'
                 sh 'mvn test'
             }
             post {
