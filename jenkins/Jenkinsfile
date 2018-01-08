@@ -1,4 +1,4 @@
-properties([parameters([string(name: 'Bucket_Name', defaultValue: 'prasadjenkin'),string(name: 'Bucket_Name1', defaultValue: 'packer-pack')])
+properties([parameters([string(name: 'Bucket_Name', defaultValue: 'prasadjenkin'),string(name: 'Bucket_Name1', defaultValue: 'packer-pack')])])
 pipeline {
     agent {
         docker {
