@@ -57,8 +57,8 @@ pipeline {
             }
         }
         stage('Store-in-S3b') { 
-            message: 'lets allow' 
             steps {
+                message: 'lets allow'
                 sh "aws s3 cp /var/lib/jenkins/workspace/junkin/target/my-app-1.0-SNAPSHOT.jar s3://${params.Bucket_Name1}/"
              }
         }
