@@ -1,4 +1,4 @@
-properties([parameters([string(name: 'Bucket_Name', defaultValue: 'kancharlaoldpics'),string(name: 'Bucket_Name1', defaultValue: 'kancharlawebsitebucket')])])
+properties([parameters([string(name: 'Bucket_Name', defaultValue: 'jenkins-testbucket'),string(name: 'Bucket_Name1', defaultValue: 'jenkins2-testbucket')])])
 pipeline {
     agent {
         docker {
